@@ -12,9 +12,6 @@ class custom_Polygon_sequence:
     def __iter__(self):
         return self.PolygonIterator(self.max_sides, self.circumradius)
 
-    def __iter__(self):
-        return self
-
     def __next__(self):
         if self.current_sides > self.max_sides:
             raise StopIteration
